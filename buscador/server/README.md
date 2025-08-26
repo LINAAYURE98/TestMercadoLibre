@@ -55,7 +55,6 @@ curl http://localhost:3001/api/items?q=iphone
       "condition": "new",
       "free_shipping": true
     }
-    // ... más items
   ]
 }
 ```
@@ -119,12 +118,10 @@ curl -X POST http://localhost:3001/api/items/multiget \
     { 
       "id": "MLA1001", 
       "title": "iPhone 12 - 64GB"
-      // ... resto de campos
     },
     { 
       "id": "MLA1003", 
       "title": "Xiaomi Redmi Note 9"
-      // ... resto de campos
     }
   ]
 }
