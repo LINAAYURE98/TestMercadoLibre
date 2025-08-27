@@ -1,0 +1,39 @@
+@use "../base/variables" as var;
+.searchbox {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  &-input {
+    padding: 9.5px 10px;
+    border: 1px solid #ffffff;
+    width: 90%;
+    font-size: 15px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    outline: none;
+  }
+
+  &-button {
+    padding: 8px 12px;
+    border: none;
+    background: var.$color-grey;
+    color: #fff;
+    cursor: pointer;
+    width: 40px;
+    height: 38px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      background: #abacaa;
+    }
+    img{
+          width: 17px;
+    }
+  }
+}
+
+.breadcrumb {
+  color: #999797;
+  margin-bottom: 12px;
+}
