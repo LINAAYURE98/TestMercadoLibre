@@ -1,0 +1,58 @@
+@use "../base/variables" as var;
+
+.item-card {
+  gap: 12px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  background: var.$color-white;
+  border: 1px solid #fafafa;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;  
+
+  &:hover{
+    transform: scale(1);  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);  
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
+  &__body {
+    flex: 1;
+  }
+
+  &__row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  &__price {
+    color: var.$color-text;
+    font-size: 18px;
+  }
+  &__freeshipping {
+    font-size: 14px;
+    color: var.$color-check;
+    font-weight: 500;
+  }
+  &__title {
+    display: block;
+    color: var.$color-text;
+    text-decoration: none;
+    margin-top: 6px;
+  }
+
+  &__condition {
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 6px;
+    background: rgb(255, 119, 51);
+    width: max-content;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 2px 15px;
+  }
+ 
+}
